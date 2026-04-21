@@ -1,0 +1,88 @@
+<html> 
+<head>
+    <title>ANIMACIONES CSS - ANIMATION</title>
+    <style>
+
+    h1{
+        font-family: "century gothic";
+        color: rgba(165, 42, 42, 0);
+        text-align: center;
+
+        animation: titulo 3s forwards;
+    }
+
+    @keyframes titulo{
+        from{ color: rgba(0, 102, 204, 0); }
+        to{ color: rgba(0, 102, 204, 1); }
+    }
+
+    p{
+        text-align: center;
+        font-family: "century gothic";
+        font-weight: bold;
+        opacity: 0;
+
+        width: 60%;
+        margin: 20px auto;
+        line-height: 1.5;
+    }
+
+    .p1{
+        animation: texto 3s 3s forwards;
+    }
+
+    .p2{
+        animation: texto 3s 9s forwards;
+    }
+
+    @keyframes texto{
+        from{ opacity: 0; }
+        to{ opacity: 1; }
+    }
+
+    img{
+        height: 200px;
+        width: 200px;
+        display: block;
+        margin: auto;
+        opacity: 0;
+    }
+
+    .img1{
+        animation: imagen 3s 6s forwards;
+    }
+
+    .img2{
+        animation: imagen 3s 12s forwards;
+    }
+
+    @keyframes imagen{
+        from{ opacity: 0; }
+        to{ opacity: 1; }
+    }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>MANUEL SEOANE CORRALES</h1>
+
+    <p class="p1">
+    El Instituto de Educación Superior Tecnológico Público Manuel Seoane Corrales 
+    es una institución reconocida por su formación técnica profesional de calidad. 
+    Brinda diversas carreras orientadas al desarrollo tecnológico y la inserción laboral de sus estudiantes.
+    </p>
+
+    <img src="img/seoane1.jpg" class="img1">
+
+    <p class="p2">
+    Además, el instituto promueve valores como la responsabilidad y la innovación en sus estudiantes. 
+    Cuenta con docentes capacitados y ambientes adecuados para el aprendizaje práctico. 
+    Su objetivo es formar profesionales competentes para el mercado laboral.
+    </p>
+
+    <img src="img/seoane2.png" class="img2">
+
+</body>
+</html>
